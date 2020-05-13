@@ -1,4 +1,4 @@
-class Mse6AT012 < Formula
+class PwtAT012 < Formula
   desc "pwt waits for you until a tcp socket, aka port becomes available and exits cleanly once it does"
   homepage "https://github.com/simonmittag/pwt"
   url "https://github.com/simonmittag/pwt/archive/v0.1.2.tar.gz"
