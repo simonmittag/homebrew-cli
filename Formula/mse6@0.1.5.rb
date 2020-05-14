@@ -1,7 +1,7 @@
 class Mse6AT015 < Formula
   desc "HTTP/1.1 server implementing mock responses for testing of edge cases"
   homepage "https://github.com/simonmittag/mse6"
-  url "https://github.com/simonmittag/mse6/archive/v0.1.4.tar.gz"
+  url "https://github.com/simonmittag/mse6/archive/v0.1.5.tar.gz"
   sha256 "d2d6f9856274f2dc2efbc73f3a8089fcacb8cc79f0266ee706666db64815a623"
 
   depends_on "go" => :build
