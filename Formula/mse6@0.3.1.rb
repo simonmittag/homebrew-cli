@@ -1,4 +1,4 @@
-class Mse6AT030 < Formula
+class Mse6AT031 < Formula
   desc "HTTP/1.1 server implementing mock responses for testing of edge cases"
   homepage "https://github.com/simonmittag/mse6"
   url "https://github.com/simonmittag/mse6/archive/v0.3.1.tar.gz"
