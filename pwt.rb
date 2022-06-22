@@ -5,11 +5,11 @@
 class Pwt < Formula
   desc ""
   homepage "https://github.com/simonmittag/pwt"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
-    url "https://github.com/simonmittag/pwt/releases/download/v0.1.2/pwt_0.1.2_darwin_all.tar.gz"
-    sha256 "3113eec7c82948ecece2327dc005bcc072061d3ecae1429b11893069da7b9008"
+    url "https://github.com/simonmittag/pwt/releases/download/v0.1.3/pwt_0.1.3_darwin_all.tar.gz"
+    sha256 "58d1ea30e71c1ecf30e21541c1b9e8b138c76cadb1af580391489568056eb6d2"
 
     def install
       bin.install "pwt"
@@ -17,17 +17,17 @@ class Pwt < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/simonmittag/pwt/releases/download/v0.1.2/pwt_0.1.2_linux_amd64.tar.gz"
-      sha256 "a70f31ef4335761f2359df0d1926930c4c2311471f10529afc838f01b69f164a"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/simonmittag/pwt/releases/download/v0.1.3/pwt_0.1.3_linux_arm64.tar.gz"
+      sha256 "6b82421d8f8736ff0924a7f9596b95eff8c98419f6ce1defa4fce82476e13b3c"
 
       def install
         bin.install "pwt"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/simonmittag/pwt/releases/download/v0.1.2/pwt_0.1.2_linux_arm64.tar.gz"
-      sha256 "f80e8333562461b16e45a78bb984bf23457d4746a4cb3917223960d6af653014"
+    if Hardware::CPU.intel?
+      url "https://github.com/simonmittag/pwt/releases/download/v0.1.3/pwt_0.1.3_linux_amd64.tar.gz"
+      sha256 "43d6a08596ab9bb0c052b6f61f978faa75478e415af2c3498b0d7dd89b46fa99"
 
       def install
         bin.install "pwt"
