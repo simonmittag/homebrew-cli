@@ -5,11 +5,11 @@
 class Punycoder < Formula
   desc ""
   homepage "https://github.com/simonmittag/punycoder"
-  version "0.0.11"
+  version "0.1.0"
 
   on_macos do
-    url "https://github.com/simonmittag/punycoder/releases/download/v0.0.11/punycoder_0.0.11_darwin_all.tar.gz"
-    sha256 "e0ba93397f8cf7711c3751f9d4cecc120b576966412af892899e424081b31aed"
+    url "https://github.com/simonmittag/punycoder/releases/download/v0.1.0/punycoder_0.1.0_darwin_all.tar.gz"
+    sha256 "217b32ec0398a378b397df4e44ee9aac533b8da13b9487ab38dafbf9c47b7435"
 
     def install
       bin.install "punycoder"
@@ -17,17 +17,17 @@ class Punycoder < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/simonmittag/punycoder/releases/download/v0.0.11/punycoder_0.0.11_linux_arm64.tar.gz"
-      sha256 "67db1f38ef6915b1320fd143d3878e298f9babb568d52c24289affaa9b593b11"
+    if Hardware::CPU.intel?
+      url "https://github.com/simonmittag/punycoder/releases/download/v0.1.0/punycoder_0.1.0_linux_amd64.tar.gz"
+      sha256 "6180e068596ae0fed7479638ec39b79242e73586236621167bbb8fef3941762b"
 
       def install
         bin.install "pwt"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/simonmittag/punycoder/releases/download/v0.0.11/punycoder_0.0.11_linux_amd64.tar.gz"
-      sha256 "b874b56beab5ecaba24348ee430edd260210f0d07315cbe2d621b663d6ed7479"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/simonmittag/punycoder/releases/download/v0.1.0/punycoder_0.1.0_linux_arm64.tar.gz"
+      sha256 "ded3d3f635f108a33aa28b3ca143300ac6e68e039ee8c742decdefd036b3f053"
 
       def install
         bin.install "pwt"
