@@ -5,11 +5,11 @@
 class Mse6 < Formula
   desc ""
   homepage "https://github.com/simonmittag/mse6"
-  version "0.4.8"
+  version "0.4.9"
 
   on_macos do
-    url "https://github.com/simonmittag/mse6/releases/download/v0.4.8/mse6_0.4.8_darwin_all.tar.gz"
-    sha256 "d5a082d0fe2f4f31bba91b3d3346ea35829fff086cf04d70d7676be0bc827338"
+    url "https://github.com/simonmittag/mse6/releases/download/v0.4.9/mse6_0.4.9_darwin_all.tar.gz"
+    sha256 "0e1cc34323181b78479aa20e39a77b3c8ed805e0197caf977c63af35c85dfaf1"
 
     def install
       bin.install "mse6"
@@ -17,17 +17,17 @@ class Mse6 < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/simonmittag/mse6/releases/download/v0.4.8/mse6_0.4.8_linux_arm64.tar.gz"
-      sha256 "c514603e94aa081350ff01e9a59b76366a517e19934c955d7cf1fd4fcd72628c"
+    if Hardware::CPU.intel?
+      url "https://github.com/simonmittag/mse6/releases/download/v0.4.9/mse6_0.4.9_linux_amd64.tar.gz"
+      sha256 "b696644e092fa73bf3871c4eabf43368825a7affcbea094d567ff0e0463691e3"
 
       def install
         bin.install "mse6"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/simonmittag/mse6/releases/download/v0.4.8/mse6_0.4.8_linux_amd64.tar.gz"
-      sha256 "88f179c7225f8da81a0b89e34fa8ed64d73cec055118f348909ccab7bb5ad969"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/simonmittag/mse6/releases/download/v0.4.9/mse6_0.4.9_linux_arm64.tar.gz"
+      sha256 "f1a3acf27f8c208542964dd352a5c9919e9de82ecbf0ea6289a84739f487a53b"
 
       def install
         bin.install "mse6"
