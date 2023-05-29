@@ -5,12 +5,12 @@
 class L0la < Formula
   desc ""
   homepage "https://github.com/simonmittag/l0la"
-  version "0.1.2"
+  version "0.1.3"
   depends_on :macos
 
   on_macos do
-    url "https://github.com/simonmittag/l0la/releases/download/v0.1.2/l0la_0.1.2_darwin_all.tar.gz"
-    sha256 "107e11da027f589a3f2f84c62c42eade7c236cbbe5e4ef457a03fd141ac204da"
+    url "https://github.com/simonmittag/l0la/releases/download/v0.1.3/l0la_0.1.3_darwin_all.tar.gz"
+    sha256 "375ed18655d12eb2681038697e2426e05f17f6657a713447eccb24ddbd5ac26e"
 
     def install
       bin.install "l0la"
