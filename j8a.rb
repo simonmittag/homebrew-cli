@@ -5,11 +5,11 @@
 class J8a < Formula
   desc ""
   homepage "https://github.com/simonmittag/j8a"
-  version "1.1.0"
+  version "1.1.1"
 
   on_macos do
-    url "https://github.com/simonmittag/j8a/releases/download/v1.1.0/j8a_1.1.0_darwin_all.tar.gz"
-    sha256 "1326f2a565ba9216fcdb6a28e50fdef8ca0fbc5a49f33a0b2d838c8acfdd575d"
+    url "https://github.com/simonmittag/j8a/releases/download/v1.1.1/j8a_1.1.1_darwin_all.tar.gz"
+    sha256 "4fd3330d0f7ba9f7ceb9d89747aaa626563b7d3f0fb1dd0cdd1ad4b6011d338d"
 
     def install
       bin.install "j8a"
@@ -18,16 +18,16 @@ class J8a < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/simonmittag/j8a/releases/download/v1.1.0/j8a_1.1.0_linux_arm64.tar.gz"
-      sha256 "ae1ba05e92a8de6e8d93a2561f7c341a43b5f6b328894d77094d8ad0ccca66b8"
+      url "https://github.com/simonmittag/j8a/releases/download/v1.1.1/j8a_1.1.1_linux_arm64.tar.gz"
+      sha256 "6d63ea07dfacd0166073d82edafe07031da4e9c4f79f403dfbdb4bd41d3213e0"
 
       def install
         bin.install "j8a"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/simonmittag/j8a/releases/download/v1.1.0/j8a_1.1.0_linux_amd64.tar.gz"
-      sha256 "03e6cb4eb3370e1976bfc22a6dca8cf9f864bd364f9549f5f1aad9e784b6cd9a"
+      url "https://github.com/simonmittag/j8a/releases/download/v1.1.1/j8a_1.1.1_linux_amd64.tar.gz"
+      sha256 "0b0390f631b66970b5fe1e1374bbf35631a191ea7ee1eb3571624b69a88cfaae"
 
       def install
         bin.install "j8a"
