@@ -5,11 +5,11 @@
 class Puri < Formula
   desc ""
   homepage "https://github.com/simonmittag/puri"
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
-    url "https://github.com/simonmittag/puri/releases/download/v0.1.3/puri_0.1.3_darwin_all.tar.gz"
-    sha256 "4c1ff14d469d00b99a7f16e12f072621993efc04ba3dc39dc9ef90ef157d224a"
+    url "https://github.com/simonmittag/puri/releases/download/v0.1.4/puri_0.1.4_darwin_all.tar.gz"
+    sha256 "5b0a4f66b6ca3ffae72439b36a73e5b34ddf84388effdf8342625143e5692c18"
 
     def install
       bin.install "puri"
@@ -18,16 +18,16 @@ class Puri < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/simonmittag/puri/releases/download/v0.1.3/puri_0.1.3_linux_amd64.tar.gz"
-      sha256 "fbf9e2722ecc6f0cc0181ec18c9581c16cf43342593b2c6499a37b0108b1d93a"
+      url "https://github.com/simonmittag/puri/releases/download/v0.1.4/puri_0.1.4_linux_amd64.tar.gz"
+      sha256 "4469acf5a802e5e72115f84b9e6a6b1996df34b487705b39db5b70510847f190"
 
       def install
         bin.install "puri"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/simonmittag/puri/releases/download/v0.1.3/puri_0.1.3_linux_arm64.tar.gz"
-      sha256 "42551ce99514dcfefa55b3ef0c253b6d670bb15c18d7360149bc48769f3653a1"
+      url "https://github.com/simonmittag/puri/releases/download/v0.1.4/puri_0.1.4_linux_arm64.tar.gz"
+      sha256 "70e917f95610d0d8466ad862bc09dc4a5e1ebfedffbbdbe185a6a20190102bf6"
 
       def install
         bin.install "puri"
