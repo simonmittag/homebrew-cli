@@ -5,11 +5,11 @@
 class P0d < Formula
   desc ""
   homepage "https://github.com/simonmittag/p0d"
-  version "0.4.6"
+  version "0.4.7"
 
   on_macos do
-    url "https://github.com/simonmittag/p0d/releases/download/v0.4.6/p0d_0.4.6_darwin_all.tar.gz"
-    sha256 "c409595775db3d3959f196e496acf054fb7ecdeff9c020e608a742859f2e2da3"
+    url "https://github.com/simonmittag/p0d/releases/download/v0.4.7/p0d_0.4.7_darwin_all.tar.gz"
+    sha256 "cc2f39c1faf74a47d7efea94eec4bca10cda76ba084490cad9eedeae9b05ffee"
 
     def install
       bin.install "p0d"
@@ -19,8 +19,8 @@ class P0d < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/simonmittag/p0d/releases/download/v0.4.6/p0d_0.4.6_linux_amd64.tar.gz"
-        sha256 "9eed31b213a835931eb6d4a241ece7251667f8ddf64b6232264639976b644824"
+        url "https://github.com/simonmittag/p0d/releases/download/v0.4.7/p0d_0.4.7_linux_amd64.tar.gz"
+        sha256 "b4cd94618291ea1a888fad90da646ac49a3c65e04f6ff16e3ffa0296df3b65eb"
 
         def install
           bin.install "p0d"
@@ -29,8 +29,8 @@ class P0d < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/simonmittag/p0d/releases/download/v0.4.6/p0d_0.4.6_linux_arm64.tar.gz"
-        sha256 "cb3c75048417520549c43f8e215d9459e7a8cea020999da385cad40e534e2000"
+        url "https://github.com/simonmittag/p0d/releases/download/v0.4.7/p0d_0.4.7_linux_arm64.tar.gz"
+        sha256 "faf1802eb337a355f12252bbd1363fa006be2606e2928a4f0ef879df8d94baab"
 
         def install
           bin.install "p0d"
