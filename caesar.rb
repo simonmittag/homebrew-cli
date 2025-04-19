@@ -5,11 +5,11 @@
 class Caesar < Formula
   desc ""
   homepage "https://github.com/simonmittag/caesarcipher"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
-    url "https://github.com/simonmittag/caesarcipher/releases/download/v0.2.0/caesarcipher_0.2.0_darwin_all.tar.gz"
-    sha256 "7312b3dcb73cd65fa140c1cf58cd96abcd9e29b0595dd64e5459262dc8667c8f"
+    url "https://github.com/simonmittag/caesarcipher/releases/download/v0.2.1/caesarcipher_0.2.1_darwin_all.tar.gz"
+    sha256 "ee02365b622fc0f28a39654905176453758c8f50034943d0b24ad0d728bab859"
 
     def install
       bin.install "caesar"
@@ -19,8 +19,8 @@ class Caesar < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/simonmittag/caesarcipher/releases/download/v0.2.0/caesarcipher_0.2.0_linux_amd64.tar.gz"
-        sha256 "9c7dacbae6df7d0004716c57a7c7b2df2712a4a4bfbbed6892439b74ea1ab451"
+        url "https://github.com/simonmittag/caesarcipher/releases/download/v0.2.1/caesarcipher_0.2.1_linux_amd64.tar.gz"
+        sha256 "118a953e24ec8280098cdde244de542c2ca107d76a0c93b978bfa61e27c65119"
 
         def install
           bin.install "caesar"
@@ -29,8 +29,8 @@ class Caesar < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/simonmittag/caesarcipher/releases/download/v0.2.0/caesarcipher_0.2.0_linux_arm64.tar.gz"
-        sha256 "f8c38a0fbdef59d48c92b201d9af70bf1212e7dd1192de539a295629fb6db0b0"
+        url "https://github.com/simonmittag/caesarcipher/releases/download/v0.2.1/caesarcipher_0.2.1_linux_arm64.tar.gz"
+        sha256 "df156800cd7047f84e1cfd6205dda814479bffb3df7457cb223a09f858b58cc7"
 
         def install
           bin.install "caesar"
