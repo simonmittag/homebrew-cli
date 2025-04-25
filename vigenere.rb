@@ -5,32 +5,22 @@
 class Vigenere < Formula
   desc ""
   homepage "https://github.com/simonmittag/vigenerecipher"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/simonmittag/vigenerecipher/releases/download/v0.1.0/vigenerecipher_0.1.0_darwin_amd64.tar.gz"
-      sha256 "dd3e0d481568755528fed54314fe2318aa84eca1422ee2c878dd52dc1ecbafa4"
+    url "https://github.com/simonmittag/vigenerecipher/releases/download/v0.1.1/vigenerecipher_0.1.1_darwin_all.tar.gz"
+    sha256 "5c3b021fcf99f3d3dc8abdce688336f11854240537e4bf80ef82d991a77109d3"
 
-      def install
-        bin.install "vigenere"
-      end
-    end
-    if Hardware::CPU.arm?
-      url "https://github.com/simonmittag/vigenerecipher/releases/download/v0.1.0/vigenerecipher_0.1.0_darwin_arm64.tar.gz"
-      sha256 "61c4e1cdfe377d5cbd6788918bdeaa6cad276010728dd94097cc532098d41320"
-
-      def install
-        bin.install "vigenere"
-      end
+    def install
+      bin.install "vigenere"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/simonmittag/vigenerecipher/releases/download/v0.1.0/vigenerecipher_0.1.0_linux_amd64.tar.gz"
-        sha256 "dbd5b16b234a0ea041f20eab726da634aea99df9fc97aea856708e03b252018d"
+        url "https://github.com/simonmittag/vigenerecipher/releases/download/v0.1.1/vigenerecipher_0.1.1_linux_amd64.tar.gz"
+        sha256 "07c3412da11d70ca4637e1e22475ef0de74c47651802469f1deb2c80f75cdf8b"
 
         def install
           bin.install "vigenere"
@@ -39,8 +29,8 @@ class Vigenere < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/simonmittag/vigenerecipher/releases/download/v0.1.0/vigenerecipher_0.1.0_linux_arm64.tar.gz"
-        sha256 "39182c1ea2702c54d6996103af24f8add5ee8b2bc8cbb081028c786b90f32c17"
+        url "https://github.com/simonmittag/vigenerecipher/releases/download/v0.1.1/vigenerecipher_0.1.1_linux_arm64.tar.gz"
+        sha256 "193eb065d4ffaf4a6a0bf64b58c62015dcb15f60013b9d0c2b56753dcc35c31b"
 
         def install
           bin.install "vigenere"
