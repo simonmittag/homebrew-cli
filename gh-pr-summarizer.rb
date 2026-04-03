@@ -5,12 +5,12 @@
 class GhPrSummarizer < Formula
   desc "Opinionated CLI utility to generate pull request summaries"
   homepage "https://github.com/simonmittag/gh-pr-summarizer"
-  version "0.1.2"
+  version "0.1.3"
   license "Apache-2.0"
 
   on_macos do
-    url "https://github.com/simonmittag/gh-pr-summarizer/releases/download/v0.1.2/gh-pr-summarizer_0.1.2_darwin_all.tar.gz"
-    sha256 "e2dcb0f97eb36746f4e9da8e742e90a9b2fc572c8bc6225fe7470c3f9379e3fa"
+    url "https://github.com/simonmittag/gh-pr-summarizer/releases/download/v0.1.3/gh-pr-summarizer_0.1.3_darwin_all.tar.gz"
+    sha256 "7f02849e82d591b8133c95d71b82264425535b5aab7f46fbf0e0a8d1187cc709"
 
     define_method(:install) do
       bin.install "gh-pr-summarizer"
@@ -19,15 +19,15 @@ class GhPrSummarizer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/simonmittag/gh-pr-summarizer/releases/download/v0.1.2/gh-pr-summarizer_0.1.2_linux_amd64.tar.gz"
-      sha256 "9e3fd3219a195475d4c96591181c85fba10804e903239827624e2b1d86193b45"
+      url "https://github.com/simonmittag/gh-pr-summarizer/releases/download/v0.1.3/gh-pr-summarizer_0.1.3_linux_amd64.tar.gz"
+      sha256 "87328747b3f26b3ebb55f5624ffb5cc22c3c06541fabae728d459323b8627e61"
       define_method(:install) do
         bin.install "gh-pr-summarizer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/simonmittag/gh-pr-summarizer/releases/download/v0.1.2/gh-pr-summarizer_0.1.2_linux_arm64.tar.gz"
-      sha256 "73ef376c627863562e76a683a6dd3432f79987b87e05a56c3fcfa30d0c89109a"
+      url "https://github.com/simonmittag/gh-pr-summarizer/releases/download/v0.1.3/gh-pr-summarizer_0.1.3_linux_arm64.tar.gz"
+      sha256 "91441efad0fecbf55f5d37f22aa4b3d98007f16609abe4a156f8665026593f20"
       define_method(:install) do
         bin.install "gh-pr-summarizer"
       end
